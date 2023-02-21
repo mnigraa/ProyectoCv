@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+        <title>ProyectoCv</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8de536b5fb.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="main_container">
+            
+            <div id="banner">
+                <h1>Curriculum Vitae</h1>
+            </div>
+            
+            <div class="datos_container">
+                <div class="circular--portrait">
+                    <img src="fotocv.jpg" />
+                </div>
+            
+                <div id="datos">
+                        
+                        <p>
+                            <i class="fa-regular fa-user"></i>
+                            <b>Nombre:  </b> Matías E. Nigra
+                        </p>
+                        
+                        <p>
+                            <i class="fa-solid fa-location-pin"></i>
+                            <b>Ubicación:  </b> Martinez, Buenos Aires
+                        </p>
+                          
+                        <p id="edad">
+                            <i class="fa-solid fa-envelope"></i>
+                            <b>Email:  </b> matias.nigra@gmail.com 
+                        </p>
+                        <button class="more">More about me...</button>
+
+                </div>
+            </div>
+            <div id="selector">
+                <div class="selector_container">
+                
+                    <div class="selector_btn" id="exp">
+                        <button class="selector_btn_button" id="0">Experience</button>
+                    </div>
+                    
+                    <div class="selector_btn" id="std">
+                        <button class="selector_btn_button" id="1">Studies</button>
+                    </div>
+                    
+                    <div class="selector_btn" id="skill">
+                        <button class="selector_btn_button" id="2">Skills</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+       <div class="main_container_aptitudes">
+            <div class="big_content">
+            <div class="aptitudes" id="experiencia" name="xp">
+                <div class="titulo">
+                    <h2 class="h_title_on">Experiencia</h2>
+                </div>
+                <div class="content">
+                  <div class="content__exp_on">
+                    <h3 class="year">2013 - 2016</h3>
+                    <h4 id="company">Martín s.a</h4>
+                      <ul>
+                        <li>Auxiliar Administrativo</li>
+                        <li>Promotor Inmobiliario</li>
+                        <li>Cadete</li>
+                      </ul>    
+                  </div>
+                  <div class="content__exp_on">
+                      <h3 class="year">2017 - 2020</h3>
+                      <h4 id="company">Coarts s.a</h4>
+                      <ul>
+                        <li>Pago a proveedores</li>
+                        <li>Contrataciones</li>
+                        <li>Logistica y coordinacion de traslados<br> de larga distancia</li>
+                      </ul>
+                  </div>  
+                </div>
+            </div>
+            
+            <div class="aptitudes" id="estudios" name="st">
+                <div class="titulo">
+                    <h2 class="h_title_on">Estudios</h2>
+                </div>
+                <div class="content">
+                     <div class="content__exp_on">
+                      <h3 class="year">2020 - 2021</h3>
+                      <h4 id="company">#YoProgramo</h4>
+                      <ul>
+                        <li>Gobstones</li>
+                        <li>Ruby</li>
+                        <li>JavaScript<br> de larga distancia</li>
+                      </ul>
+                  </div>
+                   <div class="content__exp_on">
+                      <h3 class="year">2022 - 2023</h3>
+                      <h4 id="company">ArgentinaPrograma 4.0</h4>
+                      <ul>
+                        <li>JavaScript</li>
+                        <li>API´S</li>
+                        <li>GIT - GITHUB</li>
+                      </ul>
+                  </div>
+                </div>
+            </div> 
+            
+
+<div class="aptitudes" id="skills" name="sk">
+    <div class="titulo" name="skills">
+        <h2 class="h_title_on">Skills</h2>
+    </div>
+    <div class="content" name="skills">  
+        <div class="content__sk_on">
+            <div class="skills_title">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="imagen">
+                <img src="trio.png" class="img">
+            </div>
+        </div>   
+
+        <div class="content__sk_on">
+            <div class="skills_title">          
+            <i class="fa-solid fa-language"></i>
+            </div>
+            <div class="languages">
+                <div class="language" id="english">
+                    <h2>English</h2>
+                    <p>Advanced</p>
+                </div>
+
+                <div class="language" id="portuguese">
+                    <h2>Portuguese</h2>
+                    <p>Basic</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+    </div>
+        </div>    
+
+        <div class="moreabout">
+            <div class="moreabout_title">
+                <h1>More about me</h1>
+            </div>    
+                <div class="moreabout_content">
+                    <h2>Who I am</h2>
+                    <p>Soy una persona inquieta referido al aprendizaje y sus nuevas formas de desarrolarse, busco nuevos caminos por los cuales se pueda ahondar en funciones como la programacion, una herramienta basica para el futuro. Espero mediante esta busqueda ser funcional a nuevos proyectos y generar propios poniendo en practica todo lo aprendido y lo nuevo por conocer!</p>
+                </div>
+            </div>
+
+        <div class="contact">
+            <div class="contact_title">
+                <h1>Contact me!</h1>
+            </div>
+            <div class="contact_content">
+                <form id="form">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="company" placeholder="Company">
+                    <input type="email" name="email" placeholder="email@example.com">
+                    <textarea type rows="20" name="message" placeholder="Write your message here...">Write your message here...</textarea>
+                    <input type="submit" name="send" id="button" value="Send">
+                </form>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+
+            const geolocation = navigator.geolocation;
+
+            const position = (pos)=>{
+                console.log(pos)
+            } 
+
+            geolocation.getCurrentPosition(position);
+            
+            //lista.forEach(elemento=>{
+            //  element.style.background = blue;
+            // })
+
+
+            const btns = document.querySelectorAll(".selector_btn_button");
+            console.log(btns);
+            
+            btns.forEach(b=>{
+                b.addEventListener("click", (e)=>{
+                    let boton_id = e.target.getAttribute("id");
+                    let roll = document.querySelector(".big_content");
+                    let operation = boton_id * -33.33;
+                    roll.style = `transform: translate(${operation}%)`;                        
+                    btns.forEach(b=>{
+                        b.setAttribute("value", "inactive")
+                    })
+                    e.target.setAttribute("value", "active");
+                });
+            });
+
+            const btn = document.getElementById("button");
+
+            document.getElementById("form").addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                btn.value = "Sending...";
+
+                const serviceID = "default_service";
+                const templateID = "template_lah6rma";
+
+                emailjs.sendForm(serviceID, templateID, this).then(
+                () => {
+                    btn.value = "Send Email";
+                    alert("Sent!");
+                },
+                (err) => {
+                    btn.value = "Send Email";
+                    alert(JSON.stringify(err));
+                }
+                );
+            });
+
+            const btn_more = document.querySelector(".more");
+            console.log(btn_more);
+            btn_more.addEventListener("click", ()=>{
+                window.scroll({
+                 top: 950,
+                    behavior: 'smooth'
+                });
+            });
+
+
+            //"button class="more">More about me...</button>"
+
+
+//let boton_id = e.target.getAttribute("id");
+
+//if (boton_id == "xp"){
+//let container = document.getElementById("experiencia");
+//console.log(container);
+//container.querySelector(".h_title").classList.replace("h_title", "h_title_on");
+//container.querySelector(".content__exp").classList.replace("content__exp", "content__exp_on");
+//container.querySelector(".content__exp").classList.replace("content__exp", "content__exp_on");
+//}
+//else if (boton_id == "st"){
+//    let container = document.getElementById("estudios");
+//let htitle = container.querySelector(".h_title");
+//console.log(htitle);
+//container.querySelector(".h_title").classList.replace("h_title", "h_title_on");
+//container.querySelector(".content__exp").classList.replace("content__exp", "content__exp_on");
+//container.querySelector(".content__exp").classList.replace("content__exp", "content__exp_on");
+//}
+//else{
+    //let container = document.getElementById("skills");
+//container.querySelector(".h_title").classList.replace("h_title", "h_title_on");
+//container.querySelector(".content__exp").classList.replace("content__exp", "content__exp_on");
+//container.querySelector(".content__exp").classList.replace("content__exp", "content__exp_on");
+//}
+
+
+            
+//querySelector("name" = "xp")
+
+
+
+
+        </script>
+    </body> 
+</html>
