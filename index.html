@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/normalize.css">
         <title>ProyectoCv</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
             <div class="datos_container">
                 <div class="img_container">
                     <div class="circular--portrait">
-                        <img src="fotocv.jpg" />
+                        <img src="src/fotocv.jpg" />
                     </div>
                 </div>
                 
@@ -132,7 +132,7 @@
                 <i class="fa-solid fa-code"></i>
             </div>
             <div class="imagen">
-                <img src="trio.png" class="img">
+                <img src="src/trio.png" class="img">
             </div>
         </div>   
 
@@ -183,57 +183,6 @@
         </div>
 
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script>
-
-            const btns = document.querySelectorAll(".selector_btn_button");
-            console.log(btns);
-            
-            btns.forEach(b=>{
-                b.addEventListener("click", (e)=>{
-                    let boton_id = e.target.getAttribute("id");
-                    let roll = document.querySelector(".big_content");
-                    //let operation = boton_id * -33.33;
-                    let numeroX = -100 / 3;
-                    let operation = boton_id * numeroX;
-                    roll.style = `transform: translate(${operation}%)`;                        
-                    btns.forEach(b=>{
-                        b.setAttribute("value", "inactive")
-                    })
-                    e.target.setAttribute("value", "active");
-                });
-            });
-
-            const btn = document.getElementById("button");
-
-            document.getElementById("form").addEventListener("submit", function (e) {
-                e.preventDefault();
-
-                btn.value = "Sending...";
-
-                const serviceID = "default_service";
-                const templateID = "template_lah6rma";
-
-                emailjs.sendForm(serviceID, templateID, this).then(
-                () => {
-                    btn.value = "Send Email";
-                    alert("Sent!");
-                },
-                (err) => {
-                    btn.value = "Send Email";
-                    alert(JSON.stringify(err));
-                }
-                );
-            });
-
-            const btn_more = document.querySelector(".more");
-            console.log(btn_more);
-            btn_more.addEventListener("click", ()=>{
-                window.scroll({
-                 top: 950,
-                    behavior: 'smooth'
-                });
-            });
-
-        </script>
+        <script type="text/javascript" src="index.js"></script>
     </body> 
 </html>
